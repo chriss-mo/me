@@ -4,6 +4,12 @@
 I am a Data Science and Business Economics student at UC San Diego, and I am most interested in artificial intelligience, data engineering and analytics.
 Most of my experience has been in machine learning and artificial intelligence, but I am always looking to learn more about different fields of data science.  
 
+## Work and Research  
+  ### Oxford Instruments Asylum Research
+  
+  
+  ### UCSD Systems Energy Efficiency Lab CyberLab
+
 ## Projects  
 
   ### [Sirona Clinical](https://github.com/vinumaradana/PatientMatch) ([DiamondHacks 2024 Winner](https://devpost.com/software/sirona-clinical))
@@ -15,5 +21,13 @@ Most of my experience has been in machine learning and artificial intelligence, 
   ### [NBA Odds Predictor](https://github.com/Char1iee/NBA_Odds_Analysis) (CSE 151A Class Project Winner)
   For our quarter-long project, we created machine learning models to predict the money line, as well as other betting statistics for NBA games based on season data from 2008-2023. This was a chance for us to apply what we learned in class, and we experimented with an artificial and convolutional neural network, as well as models not covered in class such as recurrent neural networks. 
 
-  ### [Leadue23](https://chriss-mo.github.io/League23/)
+  ### [League23](https://chriss-mo.github.io/League23/)
   Final project for DSC 80: Practice and Application of Data Science. Using in-game statistics from the 2023 professional season, we created a project aiming to determine whether or not there exists a "snowball effect" in League of Legends. That is, if a team destroys the first three turrets, how likely are they to win the match? We also employed methods such as hypothesis testing and missingness analysis to ensure our data was processed most appropriately for our task at hand. We used `pandas` to preprocess the data, `plotly-express` to visualize the data, and `scikit-learn` to create a predictive model.
+
+  ### Bonus: FIRST Robotics Competition Differential Swerve
+  <details open>
+  <summary> See More </summary>
+  As the drivetrain lead on the Gunn Robotics Team (GRT), I created one of the world's first differential swerve prototype drivetrains. In a traditional swerve drive, each module (4 total per drivetrain) requires two motors: one for movement and one for rotation of the fork. Using a design inspired by an automotive differential, I created a differential swerve, which can use the power of two motors to drive each wheel when it is not rotating. <br />
+    <img width="460" alt="swerve" src="https://github.com/user-attachments/assets/fdd47681-e72e-4a73-9b0d-a8bd336e15ed" />
+    <img width="460" alt="differential swerve" src="https://github.com/user-attachments/assets/c2be3c86-33de-4fe0-8061-f0930c59b825" />
+</details>
