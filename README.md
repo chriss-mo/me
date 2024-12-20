@@ -8,3 +8,5 @@ Most of my experience has been in machine learning and artificial intelligence, 
 * Henry M. Gunn High School (2017-2021)
 * UC Santa Barbara (2021-2023)
 * UC San Diego (2023-2026)
+
+## Projects  
