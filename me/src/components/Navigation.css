@@ -1,0 +1,45 @@
+
+.nav-container {
+    background-color: rgb(29, 29, 29);
+    padding: 0px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    z-index: 10;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 30px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 100px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    color: rgb(158, 168, 125);
+  }
+  
+  .nav-logo {
+    width: 70px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    fill: #fff;
+  }
+  
