@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=/me/">
     <script>
         (function() {
-            var path = window.location.pathname.replace(/^\/me/, '');
-            window.location.replace("/me/" + path);
+            var pathname = window.location.pathname;
+            var base = "/me";
+
+            // Ensure we only redirect when necessary
+            if (!pathname.startsWith(base)) {
+                window.location.replace(base + pathname + window.location.search + window.location.hash);
+            }
         })();
     </script>
 </head>
