@@ -1,0 +1,69 @@
+[
+    {
+        "year1": 2017,
+        "year2": 2021,
+        "name": "Henry M. Gunn High School",
+        "location": "Palo Alto, CA",
+        "description": "Joined the Gunn Robotics Team (FIRST Robotics team 192) in 2018. Worked on and eventually led the drivetrain subgroup, which was responsible for making the swerve drivetrain for the 2019 and 2020 FRC seasons. In my free time, I worked on developing a prototype differential swerve, which can be found in the projects section!"
+    },
+    {
+        "year1": 2021,
+        "year2": 2023,
+        "name": "UC Santa Barbara",
+        "location": "Santa Barbara, CA",
+        "position": "Double Major in Mechanical Engineering and Statistics and Data Science",
+        "description": "Started as a mechanical engineering major, but realized my strengths were better suited in statistics and data science or computer science and took more courses in that realm. I also joined Gaucho Racing, UCSB's Formula SAE Electric team, working on the suspension, braking, and steering subteam.",
+        "favoriteCourses": [
+            "MATH 8 - Introductory Proof Writing",
+            "ME 10 - Engineering Graphics: Sketching, CAD and Conceptual Design",
+            "ME 12S - Introduction to Machine Shop",
+            "CMPSC 24 - Problem Solving With Computers II (data structures)"
+        ]
+    },
+    {
+        "year1": 2023,
+        "year2": 2026,
+        "name": "UC San Diego",
+        "location": "La Jolla, San Diego, CA",
+        "position": "Double Major in Data Science and Business Economics",
+        "description": "Transferred to UC San Diego in Fall 2023 to pursue a major in Data Science and added a double major in business economics in Fall 2024.",
+        "favoriteCourses": [
+            "DSC 80 - Principles of Data Science",
+            "DSC 106 - Data Visualization",
+            "CSE 150A - Theoretical Foundations of Machine Learning",
+            "CSE 151A - Applications of Machine Learning"
+        ]
+    },
+    {
+        "year1": 2023,
+        "year2": 2024,
+        "name": "UC San Diego Systems Energy and Efficiency Lab CyberLab",
+        "location": "San Diego, CA",
+        "position": "Undergraduate Research Assistant",
+        "description": "Assisted in research at the Systems Energy Efficiency Lab (SEEL) CyberLab in Winter 2024, where we used machine learning to classify various cyberattacks using models from scikit-learn and TensorFlow, and datasets found online including X-IIoT and MQTT. Also learned about new (to me) ML methods like adversarial attacks and transfer learning."
+    },
+    {
+        "year1": 2019,
+        "year2": 2021,
+        "name": "Sidco Custom Upholstery",
+        "location": "Mountain View, CA",
+        "position": "Laser Cutter Technician",
+        "description": "Created the company logo and designs for engraving in Corel. My favorite project was working on their Faverro brand slipcovers for various Porsche and Ferrari models. Created files from cardboard mockups to be fabricated in the laser cutter, allowing for large-scale production of custom seat protectors that have an OEM look and feel."
+    },
+    {
+        "year1": 2022,
+        "year2": 2022,
+        "name": "California Mobility Works",
+        "location": "Milpitas, CA",
+        "position": "Engineering and Design Intern",
+        "description": "Learned to MIG weld and assisted in fabricating their Sagitta drivable mockup based on a Chevrolet Bolt platform. I also created a Solidworks model of the production prototype before the end of my internship."
+    },
+    {
+        "year1": 2023,
+        "year2": 2025,
+        "name": "Oxford Instruments Asylum Research",
+        "location": "Santa Barbara, CA",
+        "position": "Machine Learning Research and Development Intern",
+        "description": "Summer 2023 - Used Python remote procedure calls to autonomously scan Created a 2D convolutional neural network (CNN) to classify scan behaviors in atomic force microscopy (AFM). 2023-2024 school year - Developed an unsupervised clustering model of AFM video frames using a VGG-16 based image encoder. Summer 2024 - Adapted CNN model to be 1D and classify line segments, deployed model using aespm to incorporate classifications in a PID-style feedback loop for AFM scan parameter adjustments."
+    }
+]

@@ -12,10 +12,10 @@ function Home() {
           Welcome to my website!
         </h2>
 
-        <Link to="/about" className="about-link">
+        <Link to="/about" className="button-link">
           About Me
         </Link>
-        <Link to="/projects" className="about-link">
+        <Link to="/projects" className="button-link">
           My Projects
         </Link>
       </div>

@@ -1,123 +1,131 @@
 .abt-container {
   text-align: left;
-  padding: 5%;
+  padding: 50px;
+  padding-top: 100px; /* Add padding to the top to account for the navbar */
   margin-top: 2%;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.entry {
+  text-align: left;
+  padding: 20px;
+  background-color: rgb(43, 43, 43);
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  color: white;
+  font-size: 14pt;
+}
+
+.entry p{
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+.scroll-indicator {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-year {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-year:hover {
+  background-color: #555;
+  color: rgb(158, 168, 125);
+}
+
+.scroll-year.active {
+  background-color: #777; /* Highlight the active year */
+}
+
+.abt-button-container {
+  display: flex;
+  gap: 5%; /* Create space between the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin: 20px 0; /* Add margin to the top and bottom */
+}
+
+.abt-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px; /* Adjust the padding to resize the buttons */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.abt-button a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.abt-button:hover {
+  background-color: #555;
+}
+
+.abt-button:hover a{
+  color: rgb(158, 168, 125);
 }
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 15%;
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  border: 2px solid black; /* Add black outline */
+  /* border-radius: 5px; Optional: rounded corners */
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+.profile-grid dt, 
+.profile-grid dd {
+  padding: 10px;
+  border: 1px solid black;
 }
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-  margin-top: -150px;
+.profile-grid dt {
+  font-weight: bold;
+  grid-row: 1; /* Place dt elements in the first row */
 }
 
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-.sidco {
-  margin-top: -20%;
-}
-
-.ucsb {
-  margin-top: -8%;
-}
-
-.cmw {
-  margin-top: -28%;
-}
-
-.oiar{
-  margin-top: 1%;
-}
-
-.ucsd {
-  margin-top: -38%;
+.profile-grid dd {
+  grid-row: 2; /* Place dd elements in the second row */
+  margin: 0;
 }

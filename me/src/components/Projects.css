@@ -29,3 +29,12 @@
   height: auto;
   margin-right: 2%;
 }
+
+.proj-link {
+  color: #98987b;
+  text-decoration: underline;
+}
+
+.proj-link:hover {
+  color: #ccc; /* Change the link color on hover */
+}

@@ -1,5 +1,70 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Add any custom styles for your gallery here */
+
 .hobby-container {
     text-align: left;
     padding: 100px;
     margin-top: 0px;
-  }
+    max-width: 150vh;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+}
+
+.gallery-image {
+    width: auto;
+    height: 60vh;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the slider buttons */
+.slick-prev, .slick-next {
+    color: black; /* Change the button color to black */
+    z-index: 1; /* Ensure the buttons are above the images */
+}
+
+.slick-prev {
+    left: 10px; /* Adjust the left position */
+}
+
+.slick-next {
+    right: 10px; /* Adjust the right position */
+}
+
+/* Style the watch image container and dots */
+.watch-container {
+    display: flex;
+    align-items: center;
+}
+
+.watch-image-container {
+    position: relative;
+}
+
+.watch-image {
+    width: 50vw; /* Adjust the width as needed */
+    height: auto;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(196, 147, 60, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.watch-info {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 60%; /* Adjust the width as needed */
+    max-width: 50%;
+    min-width: 30%;
+}

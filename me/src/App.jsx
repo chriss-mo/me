@@ -1,6 +1,5 @@
 // App.jsx
 import React from "react";
-import { createRoot } from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -8,7 +7,6 @@ import Navigation from "./components/Navigation";
 import About from "./components/About";
 import Hobbies from "./components/Hobbies";
 import Projects from "./components/Projects";
-
 
 function App() {
   return (
@@ -23,7 +21,5 @@ function App() {
     </Router>
   );
 }
-
-createRoot(document.getElementById("root")).render(<App />);
 
 export default App;
