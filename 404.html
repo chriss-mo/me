@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0;url=/me/">
+    <script>
+        (function() {
+            var path = window.location.pathname.replace(/^\/me/, '');
+            window.location.replace("/me/" + path);
+        })();
+    </script>
 </head>
 <body>
 </body>
