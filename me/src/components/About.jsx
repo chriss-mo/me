@@ -9,8 +9,23 @@ function About() {
     const [activeYear, setActiveYear] = useState(null);
     const [githubData, setGithubData] = useState(null);
 
-    // Create a set of unique years
-    const uniqueYears = [...new Set(sortedExperiences.map(exp => exp.year2))];
+    // Create a set of unique years, keeping only the last occurrence of each year
+    const uniqueYears = [];
+    const yearOccurrences = {};
+    sortedExperiences.forEach(exp => {
+        if (!yearOccurrences[exp.year2]) {
+            yearOccurrences[exp.year2] = 1;
+        } else {
+            yearOccurrences[exp.year2]++;
+        }
+    });
+
+    sortedExperiences.forEach(exp => {
+        if (yearOccurrences[exp.year2] === 1) {
+            uniqueYears.push(exp.year2);
+        }
+        yearOccurrences[exp.year2]--;
+    });
 
     useEffect(() => {
         const options = {
@@ -86,7 +101,7 @@ function About() {
                 {uniqueYears.map((year, index) => (
                     <ScrollLink
                         key={index}
-                        to={`year-${year}`}
+                        to={`year-${year}-last`}
                         smooth={true}
                         duration={500}
                         offset={-120} // Adjust this value as needed
@@ -96,22 +111,26 @@ function About() {
                     </ScrollLink>
                 ))}
             </div>
-            {sortedExperiences.map((experience, index) => (
-                <Element name={`year-${experience.year2}`} className="entry" key={index} data-year={experience.year2}>
-                    <h2>{experience.year1}-{experience.year2}: {experience.name}</h2>
-                    <p><i>{experience.location}</i> <br />
-                        <b>{experience.position}</b> <br />
-                        {experience.description}
-                    </p>
-                    {experience.favoriteCourses && (
-                        <ul>
-                            {experience.favoriteCourses.map((course, i) => (
-                                <li key={i}>{course}</li>
-                            ))}
-                        </ul>
-                    )}
-                </Element>
-            ))}
+            {sortedExperiences.map((experience, index) => {
+                const isLastOccurrence = yearOccurrences[experience.year2] === 0;
+                yearOccurrences[experience.year2]++;
+                return (
+                    <Element name={`year-${experience.year2}${isLastOccurrence ? '-last' : ''}`} className="entry" key={index} data-year={experience.year2}>
+                        <h2>{experience.year1}-{experience.year2}: {experience.name}</h2>
+                        <p><i>{experience.location}</i> <br />
+                            <b>{experience.position}</b> <br />
+                            {experience.description}
+                        </p>
+                        {experience.favoriteCourses && (
+                            <ul>
+                                {experience.favoriteCourses.map((course, i) => (
+                                    <li key={i}>{course}</li>
+                                ))}
+                            </ul>
+                        )}
+                    </Element>
+                );
+            })}
             <h2><br /><u>Github Stats</u></h2>
             {githubData && (
                 <div id="profile-stats">

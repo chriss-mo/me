@@ -1,8 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "./Hobbies.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import watchInfo from "../assets/watchInfo.json"; // Import the JSON data
+import watchInfo from "../assets/watchInfo.json";
+import nikon1 from "../assets/tp.jpg";
+import nikon2 from "../assets/lajolla.jpeg";
+import kyoto1 from "../assets/kyoto2.jpg";
+import kyoto2 from "../assets/kyoto.jpg";
+import launder from "../assets/launder.jpeg";
+import oc1 from "../assets/oc.JPG";
+import oc2 from "../assets/oc2.JPG";
+import tokyo from "../assets/tokyo.jpg";
+import cp from "../assets/cp.jpg";
+import nyc1 from "../assets/nyc.jpg";
+import nyc2 from "../assets/nyc2.jpg";
+import nyc3 from "../assets/nyc3.jpg";
+import nyc4 from "../assets/nyc4.jpg";
+import nyc5 from "../assets/nyc5.jpg";
+import nyc6 from "../assets/nyc6.jpg";
+import vasona from "../assets/vasona.JPG";
+import yashica1 from "../assets/yashica1.jpg";
+import yashica2 from "../assets/yashica2.jpg";
+import yashica3 from "../assets/yashica3.jpg";
+import dispo1 from "../assets/dispo2.jpg";
+import dispo2 from "../assets/dispo1.jpg";
+import watches from "../assets/watches.jpg";
 
 function Hobbies() {
     const settings = {
@@ -61,84 +85,42 @@ function Hobbies() {
             <div className="image-gallery">
                 <h2>Nikon D3000, Yashica 50mm 1:2 f/2, digital</h2>
                 <Slider {...settings}>
-                    <div>
-                        <img src="src/assets/tp.jpg" alt="Nikon D3000 example 0" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/lajolla.jpeg" alt="Nikon D3000 example 1" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/kyoto2.jpg" alt="Nikon D3000 example 2" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/kyoto.jpg" alt="Nikon D3000 example 3" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/launder.jpeg" alt="Nikon D3000 example 4" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/oc.JPG" alt="Nikon D3000 example 5" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/oc2.JPG" alt="Nikon D3000 example 6" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/tokyo.jpg" alt="Nikon D3000 example 7" className="gallery-image" />
-                    </div>
+                    <div><img src={nikon1} alt="Nikon D3000 example 0" className="gallery-image" /></div>
+                    <div><img src={nikon2} alt="Nikon D3000 example 1" className="gallery-image" /></div>
+                    <div><img src={kyoto1} alt="Nikon D3000 example 2" className="gallery-image" /></div>
+                    <div><img src={kyoto2} alt="Nikon D3000 example 3" className="gallery-image" /></div>
+                    <div><img src={launder} alt="Nikon D3000 example 4" className="gallery-image" /></div>
+                    <div><img src={oc1} alt="Nikon D3000 example 5" className="gallery-image" /></div>
+                    <div><img src={oc2} alt="Nikon D3000 example 6" className="gallery-image" /></div>
+                    <div><img src={tokyo} alt="Nikon D3000 example 7" className="gallery-image" /></div>
                 </Slider>
             </div>
             <div className="image-gallery">
                 <h2>Pentax Optio A30, digital</h2>
                 <Slider {...settings}>
-                    <div>
-                        <img src="src/assets/cp.jpg" alt="Pentax Optio A30 example 0" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc.jpg" alt="Pentax Optio A30 example 1" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc2.jpg" alt="Pentax Optio A30 example 2" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc3.jpg" alt="Pentax Optio A30 example 3" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc4.jpg" alt="Pentax Optio A30 example 4" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc5.jpg" alt="Pentax Optio A30 example 5" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/nyc6.jpg" alt="Pentax Optio A30 example 6" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/vasona.JPG" alt="Pentax Optio A30 example 7" className="gallery-image" />
-                    </div>
+                    <div><img src={cp} alt="Pentax Optio A30 example 0" className="gallery-image" /></div>
+                    <div><img src={nyc1} alt="Pentax Optio A30 example 1" className="gallery-image" /></div>
+                    <div><img src={nyc2} alt="Pentax Optio A30 example 2" className="gallery-image" /></div>
+                    <div><img src={nyc3} alt="Pentax Optio A30 example 3" className="gallery-image" /></div>
+                    <div><img src={nyc4} alt="Pentax Optio A30 example 4" className="gallery-image" /></div>
+                    <div><img src={nyc5} alt="Pentax Optio A30 example 5" className="gallery-image" /></div>
+                    <div><img src={nyc6} alt="Pentax Optio A30 example 6" className="gallery-image" /></div>
+                    <div><img src={vasona} alt="Pentax Optio A30 example 7" className="gallery-image" /></div>
                 </Slider>
             </div>
             <div className="image-gallery">
                 <h2>Yashica FX-3, Yashica 50mm 1:2 f/2, Fujifilm C200 35mm</h2>
                 <Slider {...settings}>
-                    <div>
-                        <img src="src/assets/yashica1.jpg" alt="Yashica FX-3 example 1" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/yashica2.jpg" alt="Yashica FX-3 example 2" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/yashica3.jpg" alt="Yashica FX-3 example 3" className="gallery-image" />
-                    </div>
+                    <div><img src={yashica1} alt="Yashica FX-3 example 1" className="gallery-image" /></div>
+                    <div><img src={yashica2} alt="Yashica FX-3 example 2" className="gallery-image" /></div>
+                    <div><img src={yashica3} alt="Yashica FX-3 example 3" className="gallery-image" /></div>
                 </Slider>
             </div>
             <div className="image-gallery">
                 <h2>Fujifilm Quicksnap 400 Disposable Camera</h2>
                 <Slider {...settings}>
-                    <div>
-                        <img src="src/assets/dispo2.jpg" alt="Fujifilm Quicksnap example 1" className="gallery-image" />
-                    </div>
-                    <div>
-                        <img src="src/assets/dispo1.jpg" alt="Fujifilm Quicksnap example 2" className="gallery-image" />
-                    </div>
+                    <div><img src={dispo1} alt="Fujifilm Quicksnap example 1" className="gallery-image" /></div>
+                    <div><img src={dispo2} alt="Fujifilm Quicksnap example 2" className="gallery-image" /></div>
                     {/* Add more images as needed */}
                 </Slider>
             </div>
@@ -151,7 +133,7 @@ function Hobbies() {
             </h3>
             <div className="watch-container">
                 <div className="watch-image-container">
-                    <img src="src/assets/watches.jpg" alt="watch" className="watch-image"/>
+                    <img src={watches} alt="watch" className="watch-image" />
                     {showDots && (
                         <>
                             <div className="dot" style={{ top: "22.5%", left: "13.5%" }} onClick={() => setSelectedDot(1)}></div>

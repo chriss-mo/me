@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
 import projects from '../assets/projects.json';
+import ccr from '../assets/cc_raw.jpg';
+import ccf from '../assets/cc_final.jpg';
+import swerve from '../assets/swerve.PNG';
+import diffSwerve from '../assets/differential swerve.PNG';
 
 function Projects() {
     // Sort projects by year in descending order
@@ -32,8 +36,8 @@ function Projects() {
                     movement and one for rotation of the fork. Using a design inspired by an automotive differential, I created a differential swerve, 
                     which can use the power of two motors to drive each wheel when it is not rotating.
                     </p>
-                    <img src='src/assets/swerve.PNG' alt="swerve diagram" className="contained-image"/>
-                    <img src='src/assets/differential swerve.PNG' alt="differential swerve diagram" className="contained-image"/>
+                    <img src={swerve} alt="swerve diagram" className="contained-image"/>
+                    <img src={diffSwerve} alt="differential swerve diagram" className="contained-image"/>
                 </div>
                 <div className="entry">
                     <h2>Volkswagen Westfalia Center Console (2020)</h2>
@@ -42,8 +46,8 @@ function Projects() {
                         online and hand-traced portions of the bridge to emphasize certain features for the laser cutter to show. After engraving, the
                         panels were shaped on a router and fit into the reupholstered center console.
                     </p>
-                    <img src="src/assets/cc_raw.jpg" alt="center console cut" className="contained-image-scaled" />
-                    <img src="src/assets/cc_final.jpg" alt="center console final" className="contained-image-scaled" />
+                    <img src={ccr} alt="center console cut" className="contained-image-scaled" />
+                    <img src={ccf} alt="center console final" className="contained-image-scaled" />
                 </div>
             </>
         </div>
