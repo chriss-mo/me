@@ -9,7 +9,8 @@ const root = createRoot(container);
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename='/me'>
+    {/* <BrowserRouter basename='/me'> */}
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>
