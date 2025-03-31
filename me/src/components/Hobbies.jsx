@@ -13,7 +13,7 @@ import launder from "../assets/launder.jpeg";
 import oc1 from "../assets/oc.JPG";
 import oc2 from "../assets/oc2.JPG";
 import tokyo from "../assets/tokyo.jpg";
-import cp from "../assets/cp.jpg";
+import cp from "../assets/cp.JPG";
 import nyc1 from "../assets/nyc.JPG";
 import nyc2 from "../assets/nyc2.JPG";
 import nyc3 from "../assets/nyc3.JPG";
