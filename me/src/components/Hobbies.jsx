@@ -136,14 +136,14 @@ function Hobbies() {
                     <img src={watches} alt="watch" className="watch-image" />
                     {showDots && (
                         <>
-                            <div className="dot" style={{ top: "22.5%", left: "13.5%" }} onClick={() => setSelectedDot(1)}></div>
-                            <div className="dot" style={{ top: "21.5%", left: "33%" }} onClick={() => setSelectedDot(2)}></div>
-                            <div className="dot" style={{ top: "43%", left: "35%" }} onClick={() => setSelectedDot(3)}></div>
-                            <div className="dot" style={{ top: "40.5%", left: "52.25%" }} onClick={() => setSelectedDot(4)}></div>
-                            <div className="dot" style={{ top: "64%", left: "49%" }} onClick={() => setSelectedDot(5)}></div>
-                            <div className="dot" style={{ top: "54.5%", left: "68.5%" }} onClick={() => setSelectedDot(6)}></div>
-                            <div className="dot" style={{ top: "76%", left: "64%" }} onClick={() => setSelectedDot(7)}></div>
-                            <div className="dot" style={{ top: "71.5%", left: "84.5%" }} onClick={() => setSelectedDot(8)}></div>
+                            <div className="dot" style={{ top: "24%", left: "14.5%" }} onClick={() => setSelectedDot(1)}></div>
+                            <div className="dot" style={{ top: "22.5%", left: "34.5%" }} onClick={() => setSelectedDot(2)}></div>
+                            <div className="dot" style={{ top: "44%", left: "36.5%" }} onClick={() => setSelectedDot(3)}></div>
+                            <div className="dot" style={{ top: "42%", left: "53.5%" }} onClick={() => setSelectedDot(4)}></div>
+                            <div className="dot" style={{ top: "65.5%", left: "50%" }} onClick={() => setSelectedDot(5)}></div>
+                            <div className="dot" style={{ top: "56%", left: "69.5%" }} onClick={() => setSelectedDot(6)}></div>
+                            <div className="dot" style={{ top: "77%", left: "66%" }} onClick={() => setSelectedDot(7)}></div>
+                            <div className="dot" style={{ top: "73%", left: "86%" }} onClick={() => setSelectedDot(8)}></div>
                         </>
                     )}
                 </div>
