@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
 }
 
+div {
+  scroll-snap-align: center;
+}
+
 .home-container {
   text-align: left;
   padding: 2vw;

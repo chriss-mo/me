@@ -19,6 +19,9 @@ function Home() {
           My Projects
         </Link>
       </div>
+      <div className="home-globe">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=RMr6mls09Sr5ToV2sQP4jm8DgcDvbq3a8IY4obZdRCM"></script>
+      </div>
     </div>
   );
 }
