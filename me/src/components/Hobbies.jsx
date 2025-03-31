@@ -24,8 +24,23 @@ import vasona from "../assets/vasona.JPG";
 import yashica1 from "../assets/yashica1.jpg";
 import yashica2 from "../assets/yashica2.jpg";
 import yashica3 from "../assets/yashica3.jpg";
+import yashica4 from "../assets/yashica4.jpg";
+import yashica5 from "../assets/yashica5.jpg";
+import yashica6 from "../assets/yashica6.jpg";
+import yashica7 from "../assets/yashica7.jpg";
+import yashica8 from "../assets/yashica8.jpg";
+import yashica9 from "../assets/yashica9.jpg";
+import yashica10 from "../assets/yashica10.jpg";
+import yashica11 from "../assets/yashica11.jpg";
+import yashica12 from "../assets/yashica12.jpg";
+import yashica13 from "../assets/yashica13.jpg";
+import yashica14 from "../assets/yashica14.jpg";
+
 import dispo1 from "../assets/dispo2.jpg";
 import dispo2 from "../assets/dispo1.jpg";
+import dispo3 from "../assets/dispo3.jpg";
+import dispo4 from "../assets/dispo4.jpg";
+
 import watches from "../assets/watches.jpg";
 
 function Hobbies() {
@@ -114,6 +129,18 @@ function Hobbies() {
                     <div><img src={yashica1} alt="Yashica FX-3 example 1" className="gallery-image" /></div>
                     <div><img src={yashica2} alt="Yashica FX-3 example 2" className="gallery-image" /></div>
                     <div><img src={yashica3} alt="Yashica FX-3 example 3" className="gallery-image" /></div>
+                    <div><img src={yashica4} alt="Yashica FX-3 example 4" className="gallery-image" /></div>
+                    <div><img src={yashica5} alt="Yashica FX-3 example 5" className="gallery-image" /></div>
+                    <div><img src={yashica6} alt="Yashica FX-3 example 6" className="gallery-image" /></div>
+                    <div><img src={yashica7} alt="Yashica FX-3 example 7" className="gallery-image" /></div>
+                    <div><img src={yashica8} alt="Yashica FX-3 example 8" className="gallery-image" /></div>
+                    <div><img src={yashica9} alt="Yashica FX-3 example 9" className="gallery-image" /></div>
+                    <div><img src={yashica10} alt="Yashica FX-3 example 10" className="gallery-image" /></div>
+                    <div><img src={yashica11} alt="Yashica FX-3 example 11" className="gallery-image" /></div>
+                    <div><img src={yashica12} alt="Yashica FX-3 example 12" className="gallery-image" /></div>
+                    <div><img src={yashica13} alt="Yashica FX-3 example 13" className="gallery-image" /></div>
+                    <div><img src={yashica14} alt="Yashica FX-3 example 14" className="gallery-image" /></div>
+                    {/* Add more images as needed */}
                 </Slider>
             </div>
             <div className="image-gallery">
@@ -121,6 +148,8 @@ function Hobbies() {
                 <Slider {...settings}>
                     <div><img src={dispo1} alt="Fujifilm Quicksnap example 1" className="gallery-image" /></div>
                     <div><img src={dispo2} alt="Fujifilm Quicksnap example 2" className="gallery-image" /></div>
+                    <div><img src={dispo3} alt="Fujifilm Quicksnap example 3" className="gallery-image" /></div>
+                    <div><img src={dispo4} alt="Fujifilm Quicksnap example 4" className="gallery-image" /></div>
                     {/* Add more images as needed */}
                 </Slider>
             </div>
