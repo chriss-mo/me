@@ -4,7 +4,7 @@ import "./Hobbies.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import watchInfo from "../assets/watchInfo.json";
+import watchInfo from "../assets/watchinfo.json";
 import nikon1 from "../assets/tp.jpg";
 import nikon2 from "../assets/lajolla.jpeg";
 import kyoto1 from "../assets/kyoto2.jpg";
