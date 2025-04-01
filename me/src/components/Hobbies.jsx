@@ -38,7 +38,6 @@ import yashica14 from "../assets/yashica14.jpg";
 
 import dispo1 from "../assets/dispo2.jpg";
 import dispo2 from "../assets/dispo1.jpg";
-import dispo3 from "../assets/dispo3.jpg";
 import dispo4 from "../assets/dispo4.jpg";
 
 import watches from "../assets/watches.jpg";
@@ -148,7 +147,6 @@ function Hobbies() {
                 <Slider {...settings}>
                     <div><img src={dispo1} alt="Fujifilm Quicksnap example 1" className="gallery-image" /></div>
                     <div><img src={dispo2} alt="Fujifilm Quicksnap example 2" className="gallery-image" /></div>
-                    <div><img src={dispo3} alt="Fujifilm Quicksnap example 3" className="gallery-image" /></div>
                     <div><img src={dispo4} alt="Fujifilm Quicksnap example 4" className="gallery-image" /></div>
                     {/* Add more images as needed */}
                 </Slider>
