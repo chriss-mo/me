@@ -4,43 +4,43 @@ import "./Hobbies.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import watchInfo from "../assets/watchinfo.json";
-import nikon1 from "../assets/tp.jpg";
-import nikon2 from "../assets/lajolla.jpeg";
-import kyoto1 from "../assets/kyoto2.jpg";
-import kyoto2 from "../assets/kyoto.jpg";
-import launder from "../assets/launder.jpeg";
-import oc1 from "../assets/oc.JPG";
-import oc2 from "../assets/oc2.JPG";
-import tokyo from "../assets/tokyo.jpg";
-import cp from "../assets/cp.JPG";
-import nyc1 from "../assets/nyc.JPG";
-import nyc2 from "../assets/nyc2.JPG";
-import nyc3 from "../assets/nyc3.JPG";
-import nyc4 from "../assets/nyc4.JPG";
-import nyc5 from "../assets/nyc5.JPG";
-import nyc6 from "../assets/nyc6.JPG";
-import vasona from "../assets/vasona.JPG";
-import yashica1 from "../assets/yashica1.jpg";
-import yashica2 from "../assets/yashica2.jpg";
-import yashica3 from "../assets/yashica3.jpg";
-import yashica4 from "../assets/yashica4.jpg";
-import yashica5 from "../assets/yashica5.jpg";
-import yashica6 from "../assets/yashica6.jpg";
-import yashica7 from "../assets/yashica7.jpg";
-import yashica8 from "../assets/yashica8.jpg";
-import yashica9 from "../assets/yashica9.jpg";
-import yashica10 from "../assets/yashica10.jpg";
-import yashica11 from "../assets/yashica11.jpg";
-import yashica12 from "../assets/yashica12.jpg";
-import yashica13 from "../assets/yashica13.jpg";
-import yashica14 from "../assets/yashica14.jpg";
+import watchInfo from "../assets/hobby/watchinfo.json";
+import nikon1 from "../assets/hobby/tp.jpg";
+import nikon2 from "../assets/hobby/lajolla.jpeg";
+import kyoto1 from "../assets/hobby/kyoto2.jpg";
+import kyoto2 from "../assets/hobby/kyoto.jpg";
+import launder from "../assets/hobby/launder.jpeg";
+import oc1 from "../assets/hobby/oc.JPG";
+import oc2 from "../assets/hobby/oc2.JPG";
+import tokyo from "../assets/hobby/tokyo.jpg";
+import cp from "../assets/hobby/cp.JPG";
+import nyc1 from "../assets/hobby/nyc.JPG";
+import nyc2 from "../assets/hobby/nyc2.JPG";
+import nyc3 from "../assets/hobby/nyc3.JPG";
+import nyc4 from "../assets/hobby/nyc4.JPG";
+import nyc5 from "../assets/hobby/nyc5.JPG";
+import nyc6 from "../assets/hobby/nyc6.JPG";
+import vasona from "../assets/hobby/vasona.JPG";
+import yashica1 from "../assets/hobby/yashica1.jpg";
+import yashica2 from "../assets/hobby/yashica2.jpg";
+import yashica3 from "../assets/hobby/yashica3.jpg";
+import yashica4 from "../assets/hobby/yashica4.jpg";
+import yashica5 from "../assets/hobby/yashica5.jpg";
+import yashica6 from "../assets/hobby/yashica6.jpg";
+import yashica7 from "../assets/hobby/yashica7.jpg";
+import yashica8 from "../assets/hobby/yashica8.jpg";
+import yashica9 from "../assets/hobby/yashica9.jpg";
+import yashica10 from "../assets/hobby/yashica10.jpg";
+import yashica11 from "../assets/hobby/yashica11.jpg";
+import yashica12 from "../assets/hobby/yashica12.jpg";
+import yashica13 from "../assets/hobby/yashica13.jpg";
+import yashica14 from "../assets/hobby/yashica14.jpg";
 
-import dispo1 from "../assets/dispo2.jpg";
-import dispo2 from "../assets/dispo1.jpg";
-import dispo4 from "../assets/dispo4.jpg";
+import dispo1 from "../assets/hobby/dispo2.jpg";
+import dispo2 from "../assets/hobby/dispo1.jpg";
+import dispo4 from "../assets/hobby/dispo4.jpg";
 
-import watches from "../assets/watches.jpg";
+import watches from "../assets/hobby/watches.jpg";
 
 function Hobbies() {
     const settings = {
@@ -184,7 +184,7 @@ function Hobbies() {
                 )}
             </div>
             <br />
-            <button onClick={() => setShowDots(!showDots)}>
+            <button className="dot-button" onClick={() => setShowDots(!showDots)}>
                         {showDots ? "Hide Dots" : "Show Dots"}
             </button>
         </div>
