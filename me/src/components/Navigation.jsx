@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import "./Navigation.css";
 import logo from "../assets/mo_logo_white.svg";
 
@@ -7,31 +7,43 @@ const Navigation = () => {
   return (
     <nav className="nav-container">
       <div className="nav-left">
-        <Link to = '/'>
+        <NavLink to="/" className="nav-logo-link">
           <img src={logo} alt="Logo" className="nav-logo" />
-        </Link>
+        </NavLink>
       </div>
       <div className="nav-right">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/projects" className="nav-link">
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+            >
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/hobbies" className="nav-link">
+            <NavLink
+              to="/hobbies"
+              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+            >
               Hobbies
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+            >
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

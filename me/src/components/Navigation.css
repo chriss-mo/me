@@ -1,45 +1,62 @@
+/* Define CSS variables at the root level */
+:root {
+  --active-color: rgb(155, 155, 124); /* Define the active color variable */
+  --hover-color: #aaaa9f; /* Define the hover color variable */
+  --base-font-size: 18px; /* Base font size */
+}
+
+/* Set the base font size for the root element */
+html {
+  font-size: var(--base-font-size); /* Default font size is 16px */
+}
 
 .nav-container {
-    background-color: rgb(29, 29, 29);
-    padding: 0px 40px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Center items vertically */
-    z-index: 10;
-  }
-  
-  .nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin-right: 30px;
-  }
-  
-  .nav-item:last-child {
-    margin-right: 5%;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-    color: rgb(158, 168, 125);
-  }
-  
-  .nav-logo {
-    width: 70px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
-    fill: #fff;
-  }
-  
+  background-color: rgb(29, 29, 29);
+  padding: 0px 2.5rem; /* Use rem for padding */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  z-index: 10;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1.875rem; /* 30px = 1.875rem */
+}
+
+.nav-item:last-child {
+  margin-right: 5%; /* Keep percentage for flexibility */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* 16px = 1rem */
+  padding: 0.625rem 0.9375rem; /* 10px = 0.625rem, 15px = 0.9375rem */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--hover-color); /* Use the hover color variable */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: var(--active-color); /* Use the active color variable */
+  border-bottom: 0.125rem solid var(--active-color); /* 2px = 0.125rem */
+}
+
+.nav-logo {
+  width: 4.375rem; /* 70px = 4.375rem */
+  height: auto; /* Maintain aspect ratio */
+  fill: #fff;
+}

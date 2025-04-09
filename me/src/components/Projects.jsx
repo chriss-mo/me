@@ -2,10 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
 import projects from '../assets/projects.json';
-import ccr from '../assets/cc_raw.jpg';
-import ccf from '../assets/cc_final.jpg';
+
+// Manually import all images from the proj folder
+import bike from '../assets/proj/bike.png';
+import diet from '../assets/proj/diet.png';
+import nba from '../assets/proj/nba.png';
+import sentimap from '../assets/proj/sentimap.png';
+import typer from '../assets/proj/typer.png';
+import vct23 from '../assets/proj/vct23.png';
+import sirona from '../assets/proj/sirona.png';
+
 import swerve from '../assets/swerve.PNG';
 import diffSwerve from '../assets/differential swerve.PNG';
+import ccr from '../assets/cc_raw.jpg';
+import ccf from '../assets/cc_final.jpg';
+
+// Map the imported images to their corresponding keys
+const imageMap = {
+    "bike.png": bike,
+    "diet.png": diet,
+    "nba.png": nba,
+    "sentimap.png": sentimap,
+    "typer.png": typer,
+    "vct23.png": vct23,
+    "sirona.png": sirona,
+    "swerve.PNG": swerve,
+    "differential_swerve.PNG": diffSwerve,
+    "cc_raw.jpg": ccr,
+    "cc_final.jpg": ccf,
+};
 
 function Projects() {
     // Sort projects by year in descending order
@@ -15,7 +40,7 @@ function Projects() {
         <div className="project-container">
             <h1>My Projects</h1>
             {sortedProjects.map((project, index) => (
-                <div className="entry" key={index}>
+                <div className="json-project-entry" key={index}>
                     <h2>
                         <a href={project.link} target="_blank" className="proj-link">{project.title}</a>
                         {project.year && ` (${project.year})`}
@@ -24,6 +49,13 @@ function Projects() {
                         )}
                     </h2>
                     <p>{project.description}</p>
+                    {project.img && imageMap[project.img] && (
+                        <img
+                            src={imageMap[project.img]} // Use the mapped image
+                            alt={project.title}
+                            className="contained-image"
+                        />
+                    )}
                 </div>
             ))}
             <h1>Unrelated projects I am still proud of:</h1>

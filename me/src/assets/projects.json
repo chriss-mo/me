@@ -3,42 +3,49 @@
         "title":"Sirona Clinical",
         "year": 2024,
         "description":"DiamondHacks 2024 winner. Sirona Clinical is a program that uses the machine learning technology in Amazon Comprehend Medical to extract medical text and match patients suffering from rare diseases with related clinical trials. Our project won best in category at Diamond Hacks 2024 in the All Hands on Deck category, which emphasizes projects for societal betterment. I created the frontend of the Web App using React.js and Node.js, and worked with my partners to develop a string similarity algorithm to match tokens extracted by AWS Comprehend Medical to existing clinical trial listings in our database. This was all of our first hackathons, and I came into the weekend with little knowledge about frontend development. All in all, it was an extremely fruitful experience!",
-        "link":"https://devpost.com/software/sirona-clinical"
+        "link":"https://devpost.com/software/sirona-clinical",
+        "img": "sirona.png"
     },
     {
         "title":"VCT 2023",
         "year": 2024,
         "description":"Taking tournament data from the Valorant Champions Tour series in 2023, I created a Dashboard in Tableau to practice skills I had self-taught myself, and preprocessed the data to be used in a predictive model that, based on an individual player or overall team’s stats, would tell if the team would win and by how much. I mainly used scikit-learn for the classical machine learning models and tensorflow for the neural networks. This was also an opportunity for me to apply the machine learning methods I had learned in my classes to an industry I was interested in!",
-        "link":"https://github.com/chriss-mo/VCT23"
+        "link":"https://github.com/chriss-mo/VCT23",
+        "img": "vct23.png"
     },
     {
         "title":"NBA Odds Predictor",
         "year": 2024,
         "description":"For our quarter-long project, we created machine learning models to predict the money line, as well as other betting statistics for NBA games based on season data from 2008-2023. This was a chance for us to apply what we learned in class, and we experimented with an artificial and convolutional neural network, as well as models not covered in class such as recurrent neural networks.",
-        "link":"https://github.com/Char1iee/NBA_Odds_Analysis"
+        "link":"https://github.com/Char1iee/NBA_Odds_Analysis",
+        "img": "nba.png"
     },
     {
         "title":"World Sentimapper",
         "year": 2025,
         "description":"For the SDx Perplexity Hack Day, we created a web app that takes in the world news RSS feed from the New York Times using RabbitMQ and uses Perplexity's Sonar API to analyze the sentiment of the articles. We'd then use SQLite to store the data and display it on a web app using Streamlit. I worked on the frontend of the project and created a geospatial visualization of the diffferent sentiments, as well as implementing a search feature that allows a user to search through the articles for keywords or country names. Overall, it was a great experience and I am extremely proud of what we accomplished in an afternoon.",
-        "link":"https://chriss-mo-perplexity-hack-app-uadoc9.streamlit.app/"
+        "link":"https://chriss-mo-perplexity-hack-app-uadoc9.streamlit.app/",
+        "img": "sentimap.png"
     },
     {
         "title":"Good Will Biking",
         "year": 2025,
         "description":"A project for DSC 106: Data Visualization. We used Boston and Cambridge's bike lane data, as well as usage data from BlueBikes (a city bike program for Boston), to visualize the bike traffic in the city of Boston throughout the day. To create the visualization, we used Mapbox and D3. This was my first time working with and visualizing geospatial data, and I enjoyed the process and learned a lot about how to effectively visualize this data on a map for the user!",
-        "link":"https://chriss-mo.github.io/bike-map/"
+        "link":"https://chriss-mo.github.io/bike-map/",
+        "img": "bike.png"
     },
     {
         "title":"Diet Map",
         "year": 2025,
         "description":"Using the food log data from the BIG IDEAs Lab Glycemic Variability and Wearable Device Dataset, we created a web app that visualizes the eating habits of the subjects in the experiement throughout the study. We used D3 to create the visualization, and I worked on the cleaning and preprocessing of the dataset, as well as creating the nutrition fact labels that would show the relevant nutritional information for the most popular food, drink, and snack option at any given time. This was a great opportunity for me to work with a real dataset and exercise some creativity in conveying important information.",
-        "link":"https://chriss-mo.github.io/diet-map/"
+        "link":"https://chriss-mo.github.io/diet-map/",
+        "img": "diet.png"
     },
     {
         "title":"PD Typer",
         "year": 2025,
         "description":"Final project for DSC 106: Data Visualization. Using the Tappy Dataset from the Physionet database, we created a web app that contextualizes and visualizes the impact that Parkinson's Medication has on the typing behaviors of patients. We used the CSS keyboard from Raj Suhail (@irajsuhail on Codepen) to create a typing test visualizations that allows the user to compare the typing speeds of a Parkinson's patient on medication with a Parkinson's patient who is unmedicated. I worked on the data cleaning and preprocessings, as well as adapting the CSS keyboard to Javascript and using D3 to animate the keyboard to simulate keystrokes. Overall, this was a delightfully challenging project and a great way to end the quarter!",
-        "link":"https://chriss-mo.github.io/PDTyper/"
+        "link":"https://chriss-mo.github.io/PDTyper/",
+        "img": "typer.png"
     }
 ]
