@@ -47,5 +47,12 @@
         "description":"Final project for DSC 106: Data Visualization. Using the Tappy Dataset from the Physionet database, we created a web app that contextualizes and visualizes the impact that Parkinson's Medication has on the typing behaviors of patients. We used the CSS keyboard from Raj Suhail (@irajsuhail on Codepen) to create a typing test visualizations that allows the user to compare the typing speeds of a Parkinson's patient on medication with a Parkinson's patient who is unmedicated. I worked on the data cleaning and preprocessings, as well as adapting the CSS keyboard to Javascript and using D3 to animate the keyboard to simulate keystrokes. Overall, this was a delightfully challenging project and a great way to end the quarter!",
         "link":"https://chriss-mo.github.io/PDTyper/",
         "img": "typer.png"
+    },
+    {
+        "title":"League23",
+        "year": 2024,
+        "description":"FInal project for DSC 80: Practice and Application of Data Science. Using tournament data from the 2023 Esports Season gathered by Oracle's Elixir, we created a project to examine whether or not a snowball effect existed in League of Legends. That is, if a team was the first to get three towers from their opponent, how likely were they to win? We applied many techniques learned throughout the quarter in the project. We began by cleaning the data and imputing the data based on its appropriate missingness mechanism. We then created hypothesis tests to observe the significance of being the first to get three towers on the final result, and finally performed a fairness analysis to ensure our results were objective. Overall, this was a great project to apply our knowledge and we learned a lot about reporting data and documenting our results.",
+        "link":"https://chriss-mo.github.io/League23/",
+        "img": "league.png"
     }
 ]

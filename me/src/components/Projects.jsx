@@ -11,6 +11,7 @@ import sentimap from '../assets/proj/sentimap.png';
 import typer from '../assets/proj/typer.png';
 import vct23 from '../assets/proj/vct23.png';
 import sirona from '../assets/proj/sirona.png';
+import league from '../assets/proj/league.png';
 
 import swerve from '../assets/swerve.PNG';
 import diffSwerve from '../assets/differential swerve.PNG';
@@ -27,6 +28,7 @@ const imageMap = {
     "vct23.png": vct23,
     "sirona.png": sirona,
     "swerve.PNG": swerve,
+    "league.png": league,
     "differential_swerve.PNG": diffSwerve,
     "cc_raw.jpg": ccr,
     "cc_final.jpg": ccf,
