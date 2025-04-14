@@ -1,18 +1,72 @@
 /* Home.css */
+
+/* Wrapper for the entire page */
+.home-wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable scroll snapping */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Each section (home and globe) */
+.home,
+.home-globe {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  scroll-snap-align: start; /* Snap to the start of the section */
+}
+
+/* Existing styles for the home section */
 .home {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
   background-image: url('../assets/WTC.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-div {
-  scroll-snap-align: center;
+/* Globe container styling */
+.home-globe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d; /* Dark background for contrast */
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: visible; /* Ensure content is not clipped */
+  z-index: 1; /* Ensure it is not hidden behind other elements */
+  position: relative;
+}
+
+/* Target the globe element rendered by the script */
+#home-globe-container canvas {
+  height: 50vh; /* Set the globe's height to half the viewport */
+  width: 50vh; /* Set the globe's width to half the viewport */
+  max-width: 100%; /* Ensure it doesn't exceed the container */
+  max-height: 100%; /* Ensure it doesn't exceed the container */
+  border-radius: 50%; /* Optional: Make it circular */
+}
+
+.globe-title {
+  margin-left: 10%;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.clstrm_inner{
+  scale: 0.3;
+}
+
+.clstrm_outer{
+  margin: none;
+  max-width: 80%;
+  height: auto;
 }
 
 .home-container {
