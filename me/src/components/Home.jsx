@@ -2,16 +2,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import "./Globe.css";
 
 function Home() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//clustrmaps.com/globe.js?d=RMr6mls09Sr5ToV2sQP4jm8DgcDvbq3a8IY4obZdRCM";
-    script.type = "text/javascript";
-    script.id = "clstr_globe";
-    document.getElementById("home-globe-container").appendChild(script);
-  }, []);
-
   return (
     <div className="home-wrapper">
       {/* Home Section */}
@@ -28,14 +21,7 @@ function Home() {
           </Link>
         </div>
       </div>
-
-      {/* Globe Section */}
-      <div id="home-globe-container" className="home-globe">
-        <div className="globe-title">
-          <h1>Site visitors:</h1>
-        </div>
-      </div>
-    </div>
+    </div> 
   );
 }
 

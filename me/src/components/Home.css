@@ -17,18 +17,6 @@
   scroll-snap-align: start; /* Snap to the start of the section */
 }
 
-/* Existing styles for the home section */
-.home {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  background-image: url('../assets/WTC.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Globe container styling */
 .home-globe {
   display: flex;
   justify-content: center;
@@ -42,31 +30,15 @@
   position: relative;
 }
 
-/* Target the globe element rendered by the script */
-#home-globe-container canvas {
-  height: 50vh; /* Set the globe's height to half the viewport */
-  width: 50vh; /* Set the globe's width to half the viewport */
-  max-width: 100%; /* Ensure it doesn't exceed the container */
-  max-height: 100%; /* Ensure it doesn't exceed the container */
-  border-radius: 50%; /* Optional: Make it circular */
-}
-
-.globe-title {
-  margin-left: 10%;
-  padding: 0;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.clstrm_inner{
-  scale: 0.3;
-}
-
-.clstrm_outer{
-  margin: none;
-  max-width: 80%;
-  height: auto;
+/* Existing styles for the home section */
+.home {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url('../assets/WTC.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home-container {
