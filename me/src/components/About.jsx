@@ -94,7 +94,7 @@ function About() {
             <div className="abt-button-container">
                 <button className="abt-button"><a href="https://github.com/chriss-mo/" target="_blank">Github</a></button>
                 <button className="abt-button"><a href="https://www.linkedin.com/in/chris-mo-195367176/" target="_blank">LinkedIn</a></button>
-                <button className="abt-button"><a href="https://drive.google.com/file/d/1dCy00bNn_y3xkpgkxW_GNjJDKrppfc87/view?usp=sharing" target="_blank">Resume</a></button>
+                <button className="abt-button"><a href="https://drive.google.com/file/d/13hv8flGjPLm3k6num3CWLuJapGOYVzRy/view?usp=sharing" target="_blank">Resume</a></button>
             </div>
             <h2><u><br /><br />Education and Work Experience</u></h2>
             <div className="scroll-indicator">
