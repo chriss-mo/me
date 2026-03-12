@@ -65,5 +65,13 @@
         "location": "Santa Barbara, CA",
         "position": "Machine Learning Research and Development Intern",
         "description": "Summer 2023 - Used Python remote procedure calls to autonomously scan Created a 2D convolutional neural network (CNN) to classify scan behaviors in atomic force microscopy (AFM). 2023-2024 school year - Developed an unsupervised clustering model of AFM video frames using a VGG-16 based image encoder. Summer 2024 - Adapted CNN model to be 1D and classify line segments, deployed model using aespm to incorporate classifications in a PID-style feedback loop for AFM scan parameter adjustments."
+    },
+    {
+        "year1": 2025,
+        "year2": 2025,
+        "name": "HPE-Juniper Networks",
+        "location": "Sunnyvale, CA",
+        "position": "Data Analyst Intern",
+        "description": "As part of the master data management team, I worked on projects in entity resolution and new account review. My favorite project we worked on was an in-house web search LLM that used DuckDuckGo and Ollama to give a disconnected LLM real-time information to ground its responses. This internship taught me how to use enterprise tools like Snowflake and Docker, which was a very rewarding experience."
     }
 ]
