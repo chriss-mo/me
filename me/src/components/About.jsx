@@ -5,7 +5,12 @@ import experiences from '../assets/exp.json';
 
 function About() {
     // Sort experiences by end year in descending order
-    const sortedExperiences = experiences.sort((a, b) => b.year2 - a.year2);
+    const sortedExperiences = experiences.sort((a, b) => {
+        if (b.year2 !== a.year2) {
+            return b.year2 - a.year2;
+        }
+        return b.year1 - a.year1;
+    });
     const [activeYear, setActiveYear] = useState(null);
     const [githubData, setGithubData] = useState(null);
 
