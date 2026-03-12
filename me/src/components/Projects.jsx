@@ -41,6 +41,15 @@ function Projects() {
     // Sort projects by year in descending order
     const sortedProjects = projects.sort((a, b) => b.year - a.year);
 
+    const getImageUrl = (imgName) => {
+        try {
+            return new URL(`../assets/proj/${imgName}`, import.meta.url).href;
+        } catch (e) {
+            console.error("Could not find image:", imgName);
+            return null;
+        }
+    };
+
     return (
         <div className="project-container">
             <h1>My Projects</h1>
@@ -56,7 +65,7 @@ function Projects() {
                     <p>{project.description}</p>
                     {project.img && imageMap[project.img] && (
                         <img
-                            src={imageMap[project.img]} // Use the mapped image
+                            src={getImageUrl(project.img)}
                             alt={project.title}
                             className="contained-image"
                         />
