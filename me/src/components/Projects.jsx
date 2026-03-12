@@ -32,6 +32,7 @@ const imageMap = {
     "differential_swerve.PNG": diffSwerve,
     "cc_raw.jpg": ccr,
     "cc_final.jpg": ccf,
+    "ai4good.png": ai4good
 };
 
 function Projects() {
