@@ -12,11 +12,13 @@ import typer from '../assets/proj/typer.png';
 import vct23 from '../assets/proj/vct23.png';
 import sirona from '../assets/proj/sirona.png';
 import league from '../assets/proj/league.png';
+import ai4good from '../assets/proj/ai4good.png';
 
 import swerve from '../assets/swerve.PNG';
 import diffSwerve from '../assets/differential swerve.PNG';
 import ccr from '../assets/cc_raw.jpg';
 import ccf from '../assets/cc_final.jpg';
+
 
 // Map the imported images to their corresponding keys
 const imageMap = {
