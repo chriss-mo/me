@@ -54,5 +54,12 @@
         "description":"FInal project for DSC 80: Practice and Application of Data Science. Using tournament data from the 2023 Esports Season gathered by Oracle's Elixir, we created a project to examine whether or not a snowball effect existed in League of Legends. That is, if a team was the first to get three towers from their opponent, how likely were they to win? We applied many techniques learned throughout the quarter in the project. We began by cleaning the data and imputing the data based on its appropriate missingness mechanism. We then created hypothesis tests to observe the significance of being the first to get three towers on the final result, and finally performed a fairness analysis to ensure our results were objective. Overall, this was a great project to apply our knowledge and we learned a lot about reporting data and documenting our results.",
         "link":"https://chriss-mo.github.io/League23/",
         "img": "league.png"
+    },
+    {
+        "title":"AI4GOOD: Misinformation/Disinformation Detection Using Agentic AI",
+        "year": 2026,
+        "description":"Data Science Capstone project at UC San Diego. We started the project by training a predictive model to score a given article from the LIAR-PLUS dataset according to a set of factuality factors defined by Alternus Vera. From there, we used the predictive outputs in a single, then multi-agent system using Gemini and Google ADK to utilize the strengths of agentic AI. We then evaluated the agentic environment on manually-labeled articles and created a web application for users to try it for themselves.",
+        "link":"https://rxavier3.github.io/dsc180rxaviercmo/",
+        "img": "ai4good.png"
     }
 ]
